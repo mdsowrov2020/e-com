@@ -1,5 +1,5 @@
 .top_header {
-  background-color: #25ac65;
+  background-color: #87c43f;
   padding: 8px 0px;
 }
 .sticky {
@@ -151,7 +151,7 @@
   line-height: 40px;
   border-radius: 2px;
   text-align: center;
-  background-color: #25ac65;
+  background-color: #87c43f;
   cursor: pointer;
   color: #fff;
 }
@@ -168,7 +168,7 @@
   line-height: 40px;
   border-radius: 2px;
   text-align: center;
-  background-color: #25ac65;
+  background-color: #87c43f;
   cursor: pointer;
   color: #fff;
 }
@@ -226,7 +226,7 @@
   width: 100px;
   transform: translateX(-50%);
   top: -25px;
-  background-color: #25ac65;
+  background-color: #87c43f;
 }
 .home_heading p {
   padding-top: 10px;
@@ -290,7 +290,7 @@
   padding: 15px 40px;
   font-size: 16px;
   border-radius: 4px;
-  background-color: #25ac65;
+  background-color: #87c43f;
   color: #fff;
   text-transform: uppercase;
   transition: all 0.3s linear;
@@ -378,7 +378,7 @@
   line-height: 35px;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid #25ac65;
+  border: 1px solid #87c43f;
   cursor: pointer;
 }
 .feature_next_arrow {
@@ -392,11 +392,11 @@
   line-height: 35px;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid#25ac65;
+  border: 1px solid#87c43f;
   cursor: pointer;
 }
 .inquery_section {
-  background-color: #25ac65;
+  background-color: #87c43f;
   padding: 70px 0px;
 }
 .inquery_content h2 {
@@ -458,7 +458,7 @@
   bottom: 0;
   height: 3px;
   width: 70px;
-  background: #25ac65;
+  background: #87c43f;
 }
 .home_news_date {
   padding-top: 28px;
@@ -478,7 +478,7 @@
   line-height: 35px;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid #25ac65;
+  border: 1px solid #87c43f;
   cursor: pointer;
 }
 .news_next_arrow {
@@ -492,12 +492,12 @@
   line-height: 35px;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid #25ac65;
+  border: 1px solid #87c43f;
   cursor: pointer;
 }
 .navbar-toggler-icon {
   color: #000 !important;
-  background-color: #25ac65 !important;
+  background-color: #87c43f !important;
 }
 .project_prev_arrow {
   position: absolute;
@@ -510,7 +510,7 @@
   line-height: 35px;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid #25ac65;
+  border: 1px solid #87c43f;
   cursor: pointer;
 }
 .project_next_arrow {
@@ -524,7 +524,7 @@
   line-height: 35px;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid #25ac65;
+  border: 1px solid #87c43f;
   cursor: pointer;
 }
 @media (max-width: 576px) {
