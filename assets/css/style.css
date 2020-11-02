@@ -1279,7 +1279,7 @@ h3.ss_h3_center:before {
   position: relative;
   margin-bottom: -140px;
   background-image: url(../images/line_shape.png),
-    linear-gradient(-55deg, #36d1dc, #5b86e5);
+    linear-gradient(-55deg, #c7ed72, #87c43f);
   background-repeat: no-repeat;
 }
 .ss_foot_news_one h1 {
@@ -1308,13 +1308,21 @@ input,
   right: 0;
 }
 .ss_section_footer {
-  background: #476186;
+  /* background: #476186; */
+  background: #25ac65;
   padding: 237px 0px 100px;
 }
 .ss_section_footer p,
 .ss_section_footer a,
 .ss_section_footer li {
-  color: #b9c2cc;
+  /* color: #b9c2cc; */
+  color: #ffff;
+}
+.ss_section_footer p,
+.ss_section_footer a,
+.ss_section_footer li:hover {
+  /* color: #b9c2cc; */
+  color: #ffff !important;
 }
 .ss_section_footer h2 {
   color: #fff;
@@ -1370,12 +1378,12 @@ h2.ss_foot_head {
   width: 100%;
 }
 .ss_copywrite {
-  background: #445b71;
+  background: #25ac65;
   padding: 17px 15px 15px;
   text-align: center;
 }
 .ss_copywrite p {
-  color: #b9bdbf;
+  color: #fff;
 }
 .ss_copywrite p a {
   color: #fff;
