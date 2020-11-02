@@ -20,6 +20,9 @@
 .sticky #mynav ul {
   margin-left: auto !important;
 }
+.sticky #mynav ul li {
+  margin-left: auto !important;
+}
 .sticky .navbar .home_nav_op_logo {
   display: block;
 }
@@ -525,6 +528,9 @@
   cursor: pointer;
 }
 @media (max-width: 576px) {
+  #mynav ul {
+    margin-left: 20px !important;
+  }
   .project_prev_arrow {
     position: absolute;
     right: 28%;
