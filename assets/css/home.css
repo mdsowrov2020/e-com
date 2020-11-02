@@ -1,6 +1,37 @@
 .top_header {
-  background-color: #87c43f;
+  background-color: #25ac65;
   padding: 8px 0px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  transition: all 0.5s linear;
+  background-color: #fff;
+  /* padding: 30px 0px !important; */
+  margin-top: 0px !important;
+}
+.sticky #mynav ul li a {
+  padding: 5px 0px !important;
+  transition: all 0.3s linear;
+  margin-right: 38px !important;
+}
+.sticky #mynav ul {
+  margin-left: auto !important;
+}
+.sticky .navbar .home_nav_op_logo {
+  display: block;
+}
+.sticky .navbar .home_nav_op_logo img {
+  height: 70px;
+  width: 100px;
+}
+.sticky .home_nav_op_logo span {
+  visibility: hidden !important;
+}
+.mobile_hotline_num {
+  display: none;
 }
 .top_header_left p {
   font-size: 16px;
@@ -117,7 +148,7 @@
   line-height: 40px;
   border-radius: 2px;
   text-align: center;
-  background-color: #87c43f;
+  background-color: #25ac65;
   cursor: pointer;
   color: #fff;
 }
@@ -134,7 +165,7 @@
   line-height: 40px;
   border-radius: 2px;
   text-align: center;
-  background-color: #87c43f;
+  background-color: #25ac65;
   cursor: pointer;
   color: #fff;
 }
@@ -191,7 +222,7 @@
   width: 100px;
   transform: translateX(-50%);
   top: -25px;
-  background-color: #87c43f;
+  background-color: #25ac65;
 }
 .home_heading p {
   padding-top: 10px;
@@ -255,7 +286,7 @@
   padding: 15px 40px;
   font-size: 16px;
   border-radius: 4px;
-  background-color: #87c43f;
+  background-color: #25ac65;
   color: #fff;
   text-transform: uppercase;
   transition: all 0.3s linear;
@@ -306,8 +337,8 @@
   width: 55px;
   line-height: 35px;
   text-align: center;
-  border-radius: 30px 0px 0px 30px;
-  border: 1px solid #87c43f;
+  border-radius: 2px;
+  border: 1px solid #25ac65;
   cursor: pointer;
 }
 .feature_next_arrow {
@@ -320,12 +351,12 @@
   width: 55px;
   line-height: 35px;
   text-align: center;
-  border-radius: 0px 30px 30px 0px;
-  border: 1px solid #87c43f;
+  border-radius: 2px;
+  border: 1px solid#25ac65;
   cursor: pointer;
 }
 .inquery_section {
-  background-color: #87c43f;
+  background-color: #25ac65;
   padding: 70px 0px;
 }
 .inquery_content h2 {
@@ -387,7 +418,7 @@
   bottom: 0;
   height: 3px;
   width: 70px;
-  background: #87c43f;
+  background: #25ac65;
 }
 .home_news_date {
   padding-top: 28px;
@@ -406,8 +437,8 @@
   width: 55px;
   line-height: 35px;
   text-align: center;
-  border-radius: 30px 0px 0px 30px;
-  border: 1px solid #87c43f;
+  border-radius: 2px;
+  border: 1px solid #25ac65;
   cursor: pointer;
 }
 .news_next_arrow {
@@ -420,9 +451,13 @@
   width: 55px;
   line-height: 35px;
   text-align: center;
-  border-radius: 0px 30px 30px 0px;
-  border: 1px solid #87c43f;
+  border-radius: 2px;
+  border: 1px solid #25ac65;
   cursor: pointer;
+}
+.navbar-toggler-icon {
+  color: #000 !important;
+  background-color: #25ac65 !important;
 }
 @media (max-width: 576px) {
   .home_about_bg {
@@ -469,5 +504,67 @@
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+  }
+  .top_header {
+    display: none;
+  }
+  .home_nav_op_logo {
+    display: block;
+  }
+  .home_nav_op_logo img {
+    height: 45px;
+    width: 70px;
+  }
+  .home_nav_op_logo span {
+    color: #484848 !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .sticky .home_nav_op_logo img {
+    height: 45px !important;
+    width: 70px !important;
+  }
+  .sticky .home_nav_op_logo span {
+    visibility: visible !important;
+  }
+  .logo_home {
+    display: none;
+  }
+  .logo_home_title {
+    display: none;
+  }
+  .navbar .navbar-toggler {
+    color: #484848 !important;
+  }
+  .pc_hotline_num {
+    display: block;
+  }
+  .nav_home {
+    margin-top: 0px;
+    /*! padding: -13px 0px; */
+  }
+  .home_custom_nav li {
+    text-align: center;
+    padding: 0px 100px;
+  }
+  .logo_service_hotline {
+    text-align: center;
+  }
+  .logo_service_hotline p span {
+    display: block;
+  }
+  .logo_service_hotline {
+    text-align: center;
+  }
+  .logo_services {
+    display: none;
+  }
+  .news_prev_arrow {
+    position: absolute;
+    right: 30%;
+  }
+  .news_next_arrow {
+    position: absolute;
+    right: 5%;
   }
 }

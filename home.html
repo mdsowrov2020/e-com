@@ -67,10 +67,10 @@
 
                 </div>
             </div>
-            <div class="col-md-3 d-flex align-items-center">
+            <div class="col-md-3 col-12 d-flex align-items-center">
                 <div class="logo_service_hotline">
                     <p>Service hotline :</p>
-                    <h2>+8525-555555</h2>
+                    <h2 class="pc_hotline_num">+8525-555555</h2>
                 </div>
             </div>
         </div>
@@ -79,12 +79,12 @@
    <!-- logo part end -->
 
 <!-- ========== nav part start ========== -->
-<section class="nav_home">
+<section class="nav_home" id="navbar">
     <div class="container">
         <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand home_nav_op_logo" href="#"><img class="img-fluid" src="assets/images/web.png" alt="logo" /></a>
+            <a class="navbar-brand home_nav_op_logo" href="#"><img class="img-fluid" src="assets/images/web.png" alt="logo" /><span>FORTUNE</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span><i class="fas fa-bars bar"></i></span>
             </button>
           
             <div class="collapse navbar-collapse" id="mynav">
@@ -556,7 +556,52 @@ $('.home_news_slider').slick({
   nextArrow:
     '<span class="news_next_arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>',
   autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
+
+window.onscroll = function () {
+  myFunction();
+};
+var navbar = document.getElementById('navbar');
+
+// Get the offset position of the navbar
+// var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > 100) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+}
 </script>
 </body>
 </html>
