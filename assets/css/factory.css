@@ -1,0 +1,13 @@
+.factory_img {
+  height: 280px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.factory_img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}

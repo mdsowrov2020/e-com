@@ -1,0 +1,3 @@
+												<a href="#" class="fab fa-facebook-f" title="facebook"></a>
+												<a href="#" class="fab fa-telegram-plane" title="telegram"></a>
+												<a href="#" class="fab fa-instagram" title="instagram"></a>
