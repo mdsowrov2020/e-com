@@ -1,6 +1,7 @@
 .top_header {
   background-color: #25ad64;
   padding: 8px 0px;
+  position: relative;
 }
 .sticky {
   position: fixed;
@@ -91,7 +92,7 @@
   font-size: 16px;
   /* padding-right: 50px !important;
   padding-bottom: 8px !important; */
-  margin-right: 85px;
+  margin-right: 85px; /*before - 95px*/
   color: #484848;
   position: relative;
   overflow: hidden;
@@ -646,5 +647,159 @@
   .news_next_arrow {
     position: absolute;
     right: 5%;
+  }
+}
+
+/* ====================================================== Final Change ==================================== */
+
+.slider .slider_image {
+  height: 85vh;
+  width: 100%;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important ;
+  position: relative !important;
+  z-index: 1 !important;
+}
+.slider .slider_image::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.header_menu {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+
+.home_custom_nav li a {
+  color: #fff !important;
+}
+.home_custom_nav li a::after {
+  background-color: #25ad64;
+}
+.home_custom_nav li a:hover {
+  color: #25ad64;
+}
+.home_custom_nav li a:hover::after {
+  left: 0;
+}
+.home_custom_nav li a.home_active {
+  color: #25ad64 !important;
+}
+.home_custom_nav li a.home_active::after {
+  background-color: #25ad64 !important;
+  transition: all 0.3s linear;
+}
+
+.prev_arrow {
+  background-color: #25ad64 !important;
+  cursor: pointer;
+  color: #fff;
+}
+
+.next_arrow {
+  background-color: #25ad64 !important;
+  cursor: pointer;
+  color: #fff;
+}
+
+.slider_mid {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;
+}
+.slider_content h2 {
+  font-size: 55px !important;
+  font-weight: bolder !important;
+  color: #fff !important;
+}
+
+.slider_content p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.sticky #mynav ul li a {
+  color: #484848 !important;
+}
+
+.logo_service_hotline h2 {
+  color: #ec1313 !important;
+}
+
+.logo_service_hotline p {
+  color: #25ad64;
+}
+
+/* ======= mobile responsive ============= */
+@media (max-width: 576px) {
+  .slider_content h2 {
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    color: #fff !important;
+  }
+  .slider_content p {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .next_arrow {
+    position: absolute;
+    z-index: 99;
+    top: 60%;
+    right: 6px;
+    transform: translateY(-50%);
+    display: block;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #25ad64;
+    cursor: pointer;
+    color: #fff;
+    font-size: 11px;
+  }
+
+  .prev_arrow {
+    position: absolute;
+    z-index: 99;
+    top: 60%;
+    left: 6px;
+    transform: translateY(-50%);
+    display: block;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #25ad64;
+    cursor: pointer;
+    color: #fff;
+    font-size: 11px;
+  }
+
+  .navbar-toggler span {
+    color: #25ad64 !important;
+  }
+  .slider .slider_image {
+    height: 65vh;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important ;
+    position: relative !important;
+    z-index: 1 !important;
   }
 }
