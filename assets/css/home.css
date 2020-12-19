@@ -653,7 +653,7 @@
 /* ====================================================== Final Change ==================================== */
 
 .slider .slider_image {
-  height: 85vh;
+  height: 65vh;
   width: 100%;
   background-position: center !important;
   background-size: cover !important;
@@ -672,15 +672,6 @@
   z-index: 2;
 }
 
-.header_menu {
-  position: absolute;
-  z-index: 999;
-  width: 100%;
-}
-
-.home_custom_nav li a {
-  color: #fff !important;
-}
 .home_custom_nav li a::after {
   background-color: #25ad64;
 }
