@@ -1,0 +1,208 @@
+.product_nav_category {
+  position: relative;
+}
+
+.products_category_drop {
+  display: none;
+  width: 255px;
+  position: absolute;
+  background-color: #fff;
+  padding: 2px;
+  left: 0;
+  border-radius: 3px;
+  text-align: left !important;
+  transition: all 0.5s linear;
+  z-index: 99;
+}
+.product_left_sidebar {
+  display: block;
+  position: unset;
+  background-color: #f1f1f1;
+}
+.product_category_heading h4 {
+  position: relative;
+  font-size: 22px !important;
+  padding-bottom: 8px;
+}
+.product_category_heading h4::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: '';
+  background-color: #e5e6e6;
+}
+.products_category_drop ul li {
+  list-style-type: none;
+  text-align: left !important;
+  transition: all 0.5s linear;
+  position: relative;
+}
+.products_category_drop ul li .product_sub_nav {
+  position: absolute;
+  top: 0;
+  left: 140%;
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.products_category_drop ul li:hover .product_sub_nav {
+  opacity: 1;
+  left: 100%;
+}
+.product_left_sidebar ul li .product_sub_nav {
+  background-color: #f1f1f1;
+  width: 100%;
+  z-index: 99;
+  display: none;
+}
+.product_left_sidebar ul li:hover .product_sub_nav {
+  display: block;
+}
+
+.products_category_drop ul li .product_sub_nav ul li {
+  margin-top: 0px !important;
+  transition: all 0.5s linear;
+}
+.products_category_drop ul li .product_sub_nav ul li a {
+  width: 100%;
+  text-align: left;
+  margin-top: 0;
+  transition: all 0.5s linear;
+}
+.products_category_drop ul li a::after {
+  display: none;
+}
+.products_category_drop ul li a {
+  text-align: left !important;
+  position: relative;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 12px !important;
+  transition: all 0.5s linear;
+  display: inline-block;
+}
+.product_left_sidebar ul li a {
+  font-size: 14px !important;
+}
+.products_category_drop ul li a:hover {
+  text-align: left !important;
+  padding-left: 15px;
+}
+.product_nav_category a span {
+  font-size: 10px !important;
+  margin-left: 8px;
+}
+.drop_rigth_icon {
+  position: absolute;
+  right: 0;
+  top: 35%;
+  transform: translateY(-50%);
+  font-size: 10px !important;
+  padding-right: 8px;
+  cursor: pointer;
+  display: block;
+}
+.product_left_sidebar ul li .drop_rigth_icon {
+  top: 50%;
+}
+.product_nav_category:hover .products_category_drop {
+  display: block;
+}
+.category_card {
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.5s linear;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+}
+.category_card:hover {
+  transform: translateY(-10px);
+}
+.category_product_content {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.category_product_content p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.category_product_content a {
+  font-size: 14px;
+}
+.featured_slid_details p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.featured_slid_details a {
+  font-size: 14px;
+}
+.cat_product_img {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  border-radius: 3px;
+}
+.cat_product_img img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s linear;
+  border-radius: 3px;
+}
+.category_card:hover .cat_product_img img {
+  transform: scale(1.2);
+}
+.featured_slid_img {
+  height: 270px;
+  width: 100%;
+  overflow: hidden;
+}
+.featured_slid_img img {
+  height: 100%;
+  width: 100%;
+}
+.rotated_div {
+  width: 100%;
+}
+.featured_slid_details {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ===mobile responsive part start ========== */
+@media (max-width: 576px) {
+  .product_nav_category {
+    position: unset;
+  }
+
+  .products_category_drop {
+    display: block;
+    position: unset;
+  }
+  .products_category_drop ul li {
+    list-style-type: unset;
+  }
+  .products_category_drop ul li {
+    position: unset;
+  }
+  .products_category_drop ul li .product_sub_nav {
+    position: unset;
+    opacity: 1;
+  }
+  .products_category_drop ul li .product_sub_nav ul li {
+    list-style-type: none;
+  }
+  .drop_rigth_icon {
+    display: none;
+  }
+  .mobile_view_set {
+    display: none;
+  }
+}

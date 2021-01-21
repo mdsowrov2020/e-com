@@ -534,12 +534,17 @@
   /* new changes start  */
   #mynav ul {
     /* margin-left: 20px !important; */
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
   #mynav ul li a {
     display: block !important;
     width: 100%;
+    text-align: left;
+  }
+  #mynav ul li a:hover {
+    text-align: left !important;
+    color: #25ad64 !important;
   }
 
   .sticky .home_custom_nav li a::after {
