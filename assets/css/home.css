@@ -18,12 +18,14 @@
   transition: all 0.3s linear;
   margin-right: 38px !important;
 }
+
+/* new changes start  */
 .sticky #mynav ul {
   margin-left: auto !important;
 }
-.sticky #mynav ul li {
+/* .sticky #mynav ul li {
   margin-left: auto !important;
-}
+} */
 .sticky .navbar .home_nav_op_logo {
   display: block;
 }
@@ -529,9 +531,29 @@
   cursor: pointer;
 }
 @media (max-width: 576px) {
+  /* new changes start  */
   #mynav ul {
-    margin-left: 20px !important;
+    /* margin-left: 20px !important; */
+    text-align: center;
+    width: 100%;
   }
+  #mynav ul li a {
+    display: block !important;
+    width: 100%;
+  }
+
+  .sticky .home_custom_nav li a::after {
+    position: absolute;
+    content: '';
+    left: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    display: none;
+    background-color: tomato;
+    transition: all 0.3s linear;
+  }
+  /* new changes end  */
   .project_prev_arrow {
     position: absolute;
     right: 28%;
@@ -626,7 +648,7 @@
   }
   .home_custom_nav li {
     text-align: center;
-    padding: 0px 100px;
+    /* padding: 0px 0px; */
   }
   .logo_service_hotline {
     text-align: center;
