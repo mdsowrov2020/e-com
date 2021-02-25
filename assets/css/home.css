@@ -136,7 +136,7 @@
   margin-top: -15px;
 }
 .slider .slider_image {
-  height: 55vh;
+  height: 95vh !important;
   width: 100%;
   background-position: center !important;
   background-size: cover !important;

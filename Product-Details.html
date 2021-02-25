@@ -8,7 +8,10 @@
 	<meta name="author"  content=""/>
 	<meta name="MobileOptimized" content="320" />
 	<title>Solar Web</title>
+
+   
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/zoomJs/css/jquery.exzoom.css">
 	<link rel="stylesheet" href="./assets/css/fonts.css" />
 	<link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
 	<link rel="stylesheet" href="./assets/css/magnific-popup.css" />
@@ -19,12 +22,12 @@
 	<link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/image-magnifier.css">
+
     <link rel="stylesheet" href="assets/css/antu.css">
+    
 	<!--=== Favicon Link ===-->
     <link rel="shortcut icon" type="image/png" href="assets/images/fav-icon.png">
-    <style>
-      
-    </style>
+
 </head>
 <body>
      <!-- =========== top header start ============= -->
@@ -142,8 +145,19 @@
                 <hr>
             </div>
             <div class="col-md-5 py-3">
-                <div class="view_product_image">
-                  <img src="./assets/images/solar/cat1.jpg" alt="">
+                <div class="exzoom hidden" id="exzoom">
+                    <div class="exzoom_img_box">
+                        <ul class='exzoom_img_ul'>
+                            <li><img src="./assets/images/solar/cat1.jpg"/></li>
+                            <li><img src="./assets/images/solar/cat2.jpg"/></li>
+                            <li><img src="./assets/images/solar/cat3.jpg"/></li>
+                        </ul>
+                    </div>
+                    <div class="exzoom_nav"></div>
+                    <p class="exzoom_btn">
+                        <a href="javascript:void(0);" class="exzoom_prev_btn"> < </a>
+                        <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
+                    </p>
                 </div>
             </div>
             <div class="col-md-7 py-3">
@@ -307,6 +321,10 @@
 
 
     <!--===== script start =====-->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/jquery.magnific-popup.min.js"></script>
@@ -316,9 +334,9 @@
 <script src="./assets/js/wow.min.js"></script>
 <script src="./assets/js/slick.min.js"></script>
 <script src="./assets/js/image-magnifier.js"></script>
+<script src="./assets/zoomJs/js/jquery.exzoom.js"></script>
+<script src="./assets/js/antu.js"></script>
 <script src="./assets/js/script.js"></script>
-<script>
 
-</script>
 </body>
 </html>
