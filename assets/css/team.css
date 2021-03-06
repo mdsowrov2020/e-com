@@ -17,6 +17,7 @@
 }
 .team_img::after {
   position: absolute;
+  display: none !important;
   content: '';
   top: 0;
   left: 0;
@@ -51,20 +52,21 @@
   z-index: -1;
 }
 .team_overlay {
-  position: absolute;
-  top: 150% !important;
+  position: relative;
   left: 0;
   /* bottom: 10px; */
-  height: 0%;
+  height: 0px;
   background: #fff !important;
   content: '';
   z-index: 99;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: all 0.5s linear;
   opacity: 0;
   visibility: hidden;
+  transform: scale(0);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  transform-origin: top;
   text-align: justify;
 }
 .team_overlay p {
@@ -74,9 +76,9 @@
 }
 .team_main:hover .team_overlay {
   visibility: visible;
-  top: 100% !important;
   opacity: 1;
-  height: 100%;
+  height: auto;
+  transform: scale(1);
   border-radius: 0px 0px 10px 10px !important;
   -webkit-box-shadow: 0px 10px 30px #2b56f524;
   -moz-box-shadow: 0px 10px 30px #2b56f524;
@@ -87,3 +89,35 @@
 }
 
 /* =================================================== */
+.team_main:hover .team_overlay .web_social ul li {
+  opacity: 1;
+}
+.web_social {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.web_social ul li {
+  margin: 0 5px;
+  display: inline-block;
+  list-style-type: none;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.fb {
+  color: rgb(58, 115, 240) !important;
+}
+
+.yt {
+  color: #fa3d3d !important;
+}
+.web_social ul li a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 50%;
+  background-color: #c8e2d5;
+  color: #fff;
+}
